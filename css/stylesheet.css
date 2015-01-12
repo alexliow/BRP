@@ -1,0 +1,455 @@
+
+html { 
+	background: url(../images/pho.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+/*body{
+	background-image: url('../images/pho.jpg');
+	margin:0 auto;
+ 	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}*/
+
+body{
+	margin:0 0 0 0;
+}
+
+@font-face{
+	font-family: Dense;
+	src: url('../fonts/Dense-Regular.otf');
+}
+
+@font-face{
+	font-family: Nexa Light;
+	src: url('../fonts/Nexa\ Light.otf');
+}
+
+@font-face{
+	font-family: Edelsans;
+	src: url('../fonts/edelsans_regular.otf');
+}
+
+@font-face{
+	font-family: HelveticaNeue;
+	src: url('../fonts/HelveticaNeue.dfont');
+}
+
+/* NAVIGATION BAR ---------------------------------------------------- */
+#nav{
+	list-style-type: none;
+	padding: 0;
+	height: 150px;
+	width: 100%;
+	background: rgba(39, 40, 34, .3);
+}
+
+#logo{
+	float: left;
+	width: 250px;
+	height:auto;
+	padding: 2% 0 0 3%;
+}
+
+#nav ul {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	color: #fff;
+	padding: 2% 0 0 2%;
+	}
+
+#nav li{
+	float:left;
+	width:80px;
+	font-family: Dense;
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 33px;
+	transition: .5s ease;
+}
+
+#nav li:hover{
+	float:left;
+	width:80px;
+	font-family: Dense;
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 2px;
+	padding-top: 33px;
+	color:black;
+}
+
+
+/*First div [[Transparent]] after nav ---------------------------------------------------- */
+#firstblock{
+	margin:0 auto;
+	padding: 0;
+	width: 100%;
+	float:left;
+	height: 500px;
+	text-align: center;
+}
+
+#firstblock p{
+	color: white;
+	text-shadow:2px 2px 8px #000000;
+	font-family: "Nexa Light";
+	letter-spacing: 2px;
+	font-size: 70px;
+	margin-top:150px;
+	margin-bottom:20px;
+	animation: fadein 1s;
+	-moz-animation: fadein 1s; /* Firefox */
+	-webkit-animation: fadein 1s; /* Safari and Chrome */
+	-o-animation: fadein 1s; /* Opera */
+}
+
+#firstblock #intro{
+	font-size:30px;
+	text-shadow:2px 2px 8px #000000;
+	font-family: "Nexa Light";
+	color: white;
+	padding: 0;
+	animation: fadein 1s;
+	-moz-animation: fadein 1s; /* Firefox */
+	-webkit-animation: fadein 1s; /* Safari and Chrome */
+	-o-animation: fadein 1s; /* Opera */
+}
+
+#firstblock #button{
+	font: 14px/1.4 Helvetica,Arial,sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 30px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 4px;
+	margin-top:50px;
+	line-height: 125px;
+	padding:5px 5px 5px 5px;
+	color: rgb(235,30,36);
+	border-color: rgb(235,30,36);
+	background-color:transparent;
+	transition: .2s ease-out;
+	animation: fadein 3s;
+	-moz-animation: fadein 3s; /* Firefox */
+	-webkit-animation: fadein 3s; /* Safari and Chrome */
+	-o-animation: fadein 3s; /* Opera */
+}
+
+#firstblock #button:hover{
+	color: white;
+	background-color:rgb(235,30,36);
+}
+
+#scroll{
+	margin: 2%;
+}
+
+/*Second Div [[White]] ---------------------------------------------------- */
+#introbar{
+	margin:0 auto;
+	padding: 0;
+	width: 100%;
+	float:left;
+	height:480px;
+	background-color: white;  /*#1f3642*/
+	text-align: center;
+	background-size: 100%;
+	box-shadow: 0 2px 30px #000000;
+	background-repeat: no-repeat;
+}
+
+#topcontainer{
+	text-align: center;
+	opacity: 0;
+}
+
+.icon{
+	width: 160px;
+	height: auto;
+}
+
+.bubble{
+	width: 18%;
+	height: auto;
+	display: inline-block;
+	margin: 7% 5% 0 5%; /* this spaces out the icons into thirds along the page*/
+}
+
+#bottomcontainer{
+	text-align: center;
+	opacity: 0;
+}
+
+.block{
+	width: 18%;
+	height:auto;
+	display: inline-block;
+	margin: 0 5% 0 5%;
+}
+
+.heading{
+	font-family:"Edelsans";		
+	font-size: 25px;
+	color:black;
+}
+
+.subtext{
+	font-family: "Nexa Light";
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	line-height: 130%;
+}
+
+/*THIRD DIV ---------------------------------------------------- */
+#thirdiv{
+	position:relative;
+	width:100%;
+	height:auto;
+	float: left;
+	background-image:url(../images/div3back.png); 
+	z-index: 2;
+}
+
+#filler{
+	position:relative;
+	width: 100%;
+	height: 350px;
+	float:left;
+	text-align: center;
+	z-index: 3;
+}
+
+#div3left{	
+	float:left;
+	width:30%;
+	height: auto;
+}
+
+#div3right{
+	float:left;
+	width:70%;
+	height: auto;
+}
+
+#div3fillerright{
+	float:right;
+	width:100%;
+	height:auto;
+	padding-top:75px;
+}
+
+#div3fillerright p{
+	font-family: Dense;	
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 40px;
+	color: #434343;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.spoon{
+	float:left;
+	position:relative;
+	left: -410px;
+	width: 400px;
+	height:auto;
+	margin-top:50px;
+	z-index : 4;
+}
+
+#announce{
+	color:rgb(235,30,36);
+	font-size:60px;
+}
+
+#button2{
+	font-family: Dense;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	font-size: 30px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 4px;
+	padding:5px 5px 5px 5px;
+	color: white;
+	border-color: rgb(235,30,36);
+	background-color:rgb(235,30,36);
+	transition: .2s ease-out;
+}
+
+#button2:hover{
+	border-color: rgb(200,16,21);
+	background-color: rgb(200,16,21); 
+}
+
+
+/*FOURTH DIV ---------------------------------------------------- */
+
+#fourthdiv{
+	position: relative;
+	width: 100%;
+	float:left;
+	z-index: 5;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+#filler2{
+	width: 100%;
+	height:auto;
+	height:400px;
+	float:left;
+	z-index: 20;
+	background-color: rgb(235,30,36);
+	margin-top: 0;
+	padding-top:; 0; 
+}
+
+#div4left{
+	float:left;
+	width:100%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#div4fillerleft{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+#div4fillerleft p{
+    font-family: "HelveticaNeue-Ultralight";
+    font-size: 50px;
+    color:white;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.ingredient{
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	width:70px;
+}
+
+#button3{
+	font-family: Dense;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	font-size: 30px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 4px;
+	padding:5px 5px 5px 5px;
+	color: white;
+	border-color: rgb(255,172,26);
+	background-color:rgb(255,172,26);
+	transition: .2s ease-out;
+}
+
+#button3:hover{
+	border-color: rgb(228,150,13);
+	background-color: rgb(228,150,13); 
+}
+
+#button4{
+	font-family: Dense;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	font-size: 30px;
+	border: solid;
+	border-width: 2px;
+	border-radius: 4px;
+	padding:5px 25px 5px 25px;
+	color: black;
+	border-color: rgb(229,299,299);
+	background-color:rgb(299,299,299);
+	transition: .2s ease-out;
+}
+
+#button4:hover{
+	border-color: rgb(206,204,204);
+	background-color: rgb(206,204,204); 
+}
+
+#or{
+	font-family: "Nexa Light";
+	margin-right:10px;
+	margin-left: 10px;
+}
+
+#arrow{
+	margin-top:0;
+	padding-top:0;
+}
+
+/*CSS ANIMATION ---------------------------------------------------- */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*pop up animation ---------------------------------------------------- */
+@-webkit-keyframes spoon {
+    0%   {left:-410px;}
+    100% {left:0px;}
+}
+
+@-moz-keyframes spoon {
+    0%   {left:-410px;}
+    100% {left:0px;}
+}
+
+@-o-keyframes spoon {
+    0%   {left:-410px;}
+    100% {left:0px;}
+}
+
+@keyframes spoon {
+    0%   {left:-410px;}
+    100% {left:0px;}
+}

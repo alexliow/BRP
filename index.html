@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+        <meta charset="utf-8">
+        <title>Big Red Pho</title>
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+        <link rel="shortcut icon" href="images/browserLogo.png">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        </head>
+
+        <body> 
+
+        	<div id="nav">
+
+                <div id="logo">
+                    <a href="index.html"><img src="images/phologo.png" id="logo" alt="logo"></a>
+                </div>
+
+    			<ul>
+			        <li>MENU</li>
+			        <li>ORDER</li>
+			    </ul>
+			</div>
+
+            <!--  FIRST DIV [[TRANSPARENT]] BLOCK -->
+            <div id="firstblock">
+                <p>Fast Delivery. Authentic Pho.</p>
+                <span id="intro">for those cold late nights studying, warm yourself up with some pho!</span>
+                <br>
+                    <span id="button">Order now</span>
+                <br>
+                    <a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#scroll">
+                    <img id="scroll" src="images/downbutton.png" alt="downbutton"/>
+                    </a>
+            </div>
+
+           <!--SECOND DIV [[WHITE]] BLOCK -->
+            <div id="introbar"> 
+                    <div id="topcontainer"> 
+                        <div class="bubble"> 
+                            <img src="images/clock4.png" class="icon" alt="clock"> 
+                        </div>
+
+                        <div class="bubble">
+                            <img src="images/book4.png" class="icon" alt="ruler"> 
+                        </div>
+
+                        <div class="bubble">
+                            <img src="images/car4.png" class="icon" alt="car"> 
+                        </div>
+
+                    </div>
+
+                    <div id="bottomcontainer">
+                        <div class="block"> 
+                            <p class="heading">Quick Delivery</p>
+                            <p class="subtext">Food when you need it! Open late nights</p>
+                        </div>
+                        <div class="block"> 
+                            <p class="heading">Boost Productivity</p>
+                            <p class="subtext">Spend more time on the important things!</p>
+                        </div>
+                        <div class="block"> 
+                            <p class="heading">Always Convenient</p>
+                            <p class="subtext">Delivered to wherever you are. On or off-campus</p>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!-- THIRD DIV -->
+
+            <div id="thirdiv">
+                <div id="filler">
+
+                    <div id="div3left">
+                            <img src="images/spoon.png" class="spoon" alt="spoon" />
+
+                    </div>
+
+                    <div id="div3right">
+                        <div id="div3fillerright">
+                            <p>we use fresh ingredients only</p><br>
+                            <p>to craft an <span id="announce">Authentic Dish</span></p>
+                            <br>
+                            <span id="button2">CHECK OUT THE MENU</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- FOURTH DIV -->
+
+            <div id="fourthdiv">
+                <div id="filler2">
+
+                    <div id="div4left">
+                        <div id="div4fillerleft">
+                            <img src="images/arrow.png" id="arrow" alt="arrow" />
+                            <p>Deliciousness starts here.</p>
+                            
+                            <br>
+                            <span id="button3">LEARN OUR STORY</span> <span id="or">or</span> <span id="button4">ORDER NOW</span>
+
+                            <br>
+                            <img src="images/cinnamonicon.png" class="ingredient" alt="cinnamon" />
+                            <img src="images/staricon.png" class="ingredient" alt="star anise"/>
+                            <img src="images/cilantroicon.png" class="ingredient" alt="cilantro"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ANIMATIONS -->
+
+            <script src='js/smooth-scroll.js'></script>
+            <script>
+            
+            smoothScroll.init({
+                speed: 1000,
+                easing: 'easeInOutCubic',
+                offset: 0,
+                updateURL: true,
+                callbackBefore: function ( toggle, anchor ) {},
+                callbackAfter: function ( toggle, anchor ) {}
+            });
+                var bool = true;
+
+                 $(document).scroll(function(){
+                    if ($(document).scrollTop() > 650 && bool) {
+                        bool = false;
+                        $('.spoon').css('-webkit-animation', 'spoon 2s forwards');
+                        $('.spoon').css('-moz-animation', 'spoon 2s forwards');
+                        $('.spoon').css('-o-animation', 'spoon 2s forwards');
+                        $('.spoon').css('animation', 'spoon 2s forwards');
+                    }
+                 
+                 });
+
+                 $(document).scroll(function(){
+                    if ($(document).scrollTop() > 200) {
+                        $('#topcontainer').css('-webkit-animation', 'fadein 0.5s forwards');
+                        $('#topcontainer').css('-moz-animation', 'fadein 0.5s forwards');
+                        $('#topcontainer').css('-o-animation', 'fadein 0.5s forwards');
+                        $('#topcontainer').css('animation', 'fadein 0.5s forwards');
+                        $('#bottomcontainer').css('-webkit-animation', 'fadein 0.5s forwards');
+                        $('#bottomcontainer').css('-moz-animation', 'fadein 0.5s forwards');
+                        $('#bottomcontainer').css('-o-animation', 'fadein 0.5s forwards');
+                        $('#bottomcontainer').css('animation', 'fadein 0.5s forwards');
+
+                    } 
+                 
+                 });
+
+                    // $(document).scroll(function (){
+                    //     var offset = 980 + $(thirdiv).height() + $(fourthdiv).scrollTop();
+                    //     var offsetMid = 980 + $(thirdiv).height() + $(fourthdiv).height()/2;
+                    //     var scrollPos = $(document).scrollTop();
+                    //     if(scrollPos > 1000){
+                    //         $('#fourthdiv').css('background-position', '0% ' + 50 + 1.1*(offsetMid - offset) +'%');
+                    //     }
+                    // });
+                
+
+                //  $(document).scroll(function(){
+                //     if ($(document).scrollTop() > 700) {
+                
+                //         $('html').css('background', 'url(images/phoback2.jpg) no-repeat center center fixed');
+                //         $('html').css('-webkit-background-size', 'cover'); 
+                //         $('html').css('-moz-background-size', 'cover');
+                //         $('html').css(' -o-background-size', 'cover');
+                //         $('html').css(' background-size', 'cover');
+
+                //     } 
+                //     else if ($(document).scrollTop() < 700) {
+                //         $('html').css('background', 'url(images/pho.jpg) no-repeat center center fixed');
+                //         $('html').css('-webkit-background-size', 'cover');
+                //         $('html').css('-moz-background-size', 'cover');
+                //         $('html').css(' -o-background-size', 'cover');
+                //         $('html').css(' background-size', 'cover');
+                //     }
+                 
+                // });     
+            </script>
+
+
+        </body>
+    </html>
